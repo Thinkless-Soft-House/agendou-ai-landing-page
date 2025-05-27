@@ -67,7 +67,7 @@ const Index = () => {
                 Vantagens
               </button>
               <button onClick={() => scrollToSection('recursos')} className="hover:text-purple-600 transition-colors">
-                Recursos
+                Como Funciona
               </button>
               <button onClick={() => scrollToSection('precos')} className="hover:text-purple-600 transition-colors">
                 Preços
@@ -97,7 +97,7 @@ const Index = () => {
                   Vantagens
                 </button>
                 <button onClick={() => scrollToSection('recursos')} className="text-left hover:text-purple-600 transition-colors">
-                  Recursos
+                  Como Funciona
                 </button>
                 <button onClick={() => scrollToSection('precos')} className="text-left hover:text-purple-600 transition-colors">
                   Preços
@@ -123,11 +123,11 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Revolucione seus <span className="text-gradient">Agendamentos</span> com IA
+              Acabe com a <span className="text-gradient">Bagunça</span> dos Agendamentos
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-              Sistema completo de agendamento multi-tenant com QR Code, notificações automáticas 
-              e gestão inteligente de espaços e funcionários.
+              Chega de papel, WhatsApp confuso e clientes perdidos! 
+              Organize tudo em um só lugar e deixe seus clientes marcarem sozinhos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -135,7 +135,7 @@ const Index = () => {
                 className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-4"
                 onClick={() => scrollToSection('precos')}
               >
-                Começar Agora <ArrowRight className="ml-2" size={20} />
+                Quero Organizar Meu Negócio <ArrowRight className="ml-2" size={20} />
               </Button>
               <Button 
                 variant="outline" 
@@ -143,7 +143,7 @@ const Index = () => {
                 className="border-purple-600 text-purple-600 hover:bg-purple-50 text-lg px-8 py-4"
                 onClick={() => scrollToSection('recursos')}
               >
-                Ver Demonstração
+                Ver Como Funciona
               </Button>
             </div>
           </div>
@@ -155,10 +155,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Por que escolher o <span className="text-gradient">Agendou AI</span>?
+              Por que usar o <span className="text-gradient">Agendou AI</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Simplifique sua gestão e aumente a satisfação dos clientes com nossa solução completa.
+              Pare de perder tempo e dinheiro com agendamentos bagunçados. Veja como podemos ajudar:
             </p>
           </div>
 
@@ -168,12 +168,12 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Building className="text-purple-600" size={32} />
                 </div>
-                <CardTitle>Multi-Tenant</CardTitle>
+                <CardTitle>Para Qualquer Negócio</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Gerencie múltiplas empresas e espaços em uma única plataforma, 
-                  com controle total de acesso e permissões.
+                  Salão, clínica, consultório, academia... 
+                  Funciona para qualquer tipo de serviço que precisa de hora marcada.
                 </p>
               </CardContent>
             </Card>
@@ -183,12 +183,12 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <QrCode className="text-purple-600" size={32} />
                 </div>
-                <CardTitle>QR Code Inteligente</CardTitle>
+                <CardTitle>Cliente Agenda Sozinho</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Agendamento direto e simplificado via QR Code, 
-                  sem necessidade de cadastro prévio do cliente.
+                  Coloque um QR Code na porta e pronto! 
+                  Cliente aponta o celular e marca o horário na hora.
                 </p>
               </CardContent>
             </Card>
@@ -198,12 +198,12 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Bell className="text-purple-600" size={32} />
                 </div>
-                <CardTitle>Notificações Automáticas</CardTitle>
+                <CardTitle>Lembra Sozinho</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  E-mail e WhatsApp automáticos com confirmações, 
-                  lembretes e atualizações de status.
+                  Manda email e WhatsApp automático lembrando do horário. 
+                  Seus clientes não esquecem mais!
                 </p>
               </CardContent>
             </Card>
@@ -213,12 +213,12 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Clock className="text-purple-600" size={32} />
                 </div>
-                <CardTitle>Disponibilidade Flexível</CardTitle>
+                <CardTitle>Horário Flexível</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Configure horários personalizados por espaço e funcionário, 
-                  com regras de disponibilidade inteligentes.
+                  Configure seus horários uma vez só. 
+                  O sistema já sabe quando você atende e quando está ocupado.
                 </p>
               </CardContent>
             </Card>
@@ -228,12 +228,12 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Users className="text-purple-600" size={32} />
                 </div>
-                <CardTitle>Gestão de Equipe</CardTitle>
+                <CardTitle>Controla Funcionários</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Controle de acesso limitado por funcionário e espaço, 
-                  com níveis de permissão personalizáveis.
+                  Cada funcionário vê só os próprios horários. 
+                  Você controla quem pode mexer no quê.
                 </p>
               </CardContent>
             </Card>
@@ -243,12 +243,12 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Smartphone className="text-purple-600" size={32} />
                 </div>
-                <CardTitle>Mobile First</CardTitle>
+                <CardTitle>Funciona no Celular</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Interface responsiva e otimizada para dispositivos móveis, 
-                  garantindo a melhor experiência em qualquer tela.
+                  Você e seus clientes podem usar no celular, tablet ou computador. 
+                  Funciona em qualquer lugar!
                 </p>
               </CardContent>
             </Card>
@@ -260,7 +260,7 @@ const Index = () => {
               className="bg-purple-600 hover:bg-purple-700"
               onClick={() => scrollToSection('precos')}
             >
-              Ver Planos e Preços <ArrowRight className="ml-2" size={20} />
+              Quero Começar Agora <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
         </div>
@@ -274,7 +274,7 @@ const Index = () => {
               Como <span className="text-gradient">Funciona</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Em apenas 3 passos simples, você transforma a gestão de agendamentos da sua empresa.
+              Super simples! Em 3 passos você organiza tudo e nunca mais perde cliente.
             </p>
           </div>
 
@@ -283,10 +283,10 @@ const Index = () => {
               <div className="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 1
               </div>
-              <h3 className="text-2xl font-bold mb-4">Configure</h3>
+              <h3 className="text-2xl font-bold mb-4">Cadastre Seu Negócio</h3>
               <p className="text-gray-600">
-                Defina seus espaços, funcionários e horários de funcionamento 
-                em poucos minutos através da nossa interface intuitiva.
+                Coloque o nome da empresa, seus horários de funcionamento 
+                e os serviços que você oferece. Demora só alguns minutos.
               </p>
             </div>
 
@@ -294,10 +294,10 @@ const Index = () => {
               <div className="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 2
               </div>
-              <h3 className="text-2xl font-bold mb-4">Divulgue</h3>
+              <h3 className="text-2xl font-bold mb-4">Imprima o QR Code</h3>
               <p className="text-gray-600">
-                Compartilhe seus QR Codes personalizados ou link direto 
-                para que clientes façam agendamentos instantâneos.
+                Cole o QR Code na porta, no balcão, mande no WhatsApp... 
+                Onde o cliente ver, pode agendar na hora!
               </p>
             </div>
 
@@ -305,10 +305,10 @@ const Index = () => {
               <div className="w-20 h-20 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
                 3
               </div>
-              <h3 className="text-2xl font-bold mb-4">Gerencie</h3>
+              <h3 className="text-2xl font-bold mb-4">Relaxe e Atenda</h3>
               <p className="text-gray-600">
-                Acompanhe todos os agendamentos em tempo real, 
-                com notificações automáticas para você e seus clientes.
+                Pronto! Agora é só atender seus clientes. O sistema cuida de tudo: 
+                lembra dos horários, confirma, avisa se cancelou.
               </p>
             </div>
           </div>
@@ -330,10 +330,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Recursos <span className="text-gradient">Poderosos</span>
+              O que Você <span className="text-gradient">Ganha</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Tudo que você precisa para otimizar seus agendamentos e aumentar a eficiência.
+              Veja tudo que melhora no seu negócio quando você para de se preocupar com agendamentos.
             </p>
           </div>
 
@@ -345,10 +345,10 @@ const Index = () => {
                     <Target className="text-purple-600" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Dashboard Inteligente</h3>
+                    <h3 className="text-xl font-bold mb-2">Vê Tudo de Uma Vez</h3>
                     <p className="text-gray-600">
-                      Visualize métricas em tempo real, relatórios detalhados e insights 
-                      para otimizar sua operação.
+                      Uma tela só com todos os agendamentos do dia, da semana, do mês. 
+                      Sabe sempre o que vem por aí.
                     </p>
                   </div>
                 </div>
@@ -358,10 +358,10 @@ const Index = () => {
                     <Zap className="text-purple-600" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Agendamento Express</h3>
+                    <h3 className="text-xl font-bold mb-2">Cliente Agenda Rápido</h3>
                     <p className="text-gray-600">
-                      Clientes cadastrados e não cadastrados podem agendar 
-                      em segundos via QR Code ou link direto.
+                      Cliente não precisa baixar app nem fazer cadastro complicado. 
+                      Aponta o celular no QR Code e pronto!
                     </p>
                   </div>
                 </div>
@@ -371,10 +371,10 @@ const Index = () => {
                     <Shield className="text-purple-600" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Segurança Total</h3>
+                    <h3 className="text-xl font-bold mb-2">Seus Dados Seguros</h3>
                     <p className="text-gray-600">
-                      Dados protegidos com criptografia avançada e backup automático 
-                      na nuvem.
+                      Tudo fica guardado na nuvem com segurança. 
+                      Mesmo se o celular quebrar, não perde nada.
                     </p>
                   </div>
                 </div>
@@ -389,11 +389,11 @@ const Index = () => {
                     <span className="text-2xl font-bold">24</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-purple-200">Taxa de Ocupação</span>
+                    <span className="text-purple-200">Horários Ocupados</span>
                     <span className="text-2xl font-bold">87%</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-purple-200">Satisfação</span>
+                    <span className="text-purple-200">Clientes Satisfeitos</span>
                     <div className="flex items-center space-x-1">
                       {[1,2,3,4,5].map((star) => (
                         <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
@@ -411,7 +411,7 @@ const Index = () => {
               className="bg-purple-600 hover:bg-purple-700"
               onClick={() => scrollToSection('precos')}
             >
-              Experimentar Grátis <ArrowRight className="ml-2" size={20} />
+              Quero Esses Resultados <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
         </div>
@@ -422,7 +422,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              O que nossos <span className="text-gradient">Clientes</span> dizem
+              O que nossos <span className="text-gradient">Clientes</span> falam
             </h2>
           </div>
 
@@ -435,13 +435,13 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "Reduzi 80% do tempo gasto com agendamentos. O QR Code é um diferencial incrível!"
+                  "Nossa, que alívio! Antes eu passava o dia inteiro no WhatsApp organizando horários. Agora só atendo!"
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-purple-100 rounded-full"></div>
                   <div>
                     <p className="font-semibold">Maria Silva</p>
-                    <p className="text-sm text-gray-500">Salão de Beleza Premium</p>
+                    <p className="text-sm text-gray-500">Salão de Beleza</p>
                   </div>
                 </div>
               </CardContent>
@@ -455,7 +455,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "Sistema perfeito para nossa clínica. As notificações automáticas são fantásticas."
+                  "Meus pacientes adoraram! Agora marcam quando querem, até de madrugada. E eu não preciso ficar lembrando ninguém."
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-purple-100 rounded-full"></div>
@@ -475,13 +475,13 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "Conseguimos atender 30% mais clientes com a mesma equipe. ROI garantido!"
+                  "Consegui atender 30% mais gente sem contratar ninguém. O dinheiro que economizei já pagou o sistema por anos!"
                 </p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-purple-100 rounded-full"></div>
                   <div>
                     <p className="font-semibold">Carlos Mendes</p>
-                    <p className="text-sm text-gray-500">Academia FitMax</p>
+                    <p className="text-sm text-gray-500">Academia</p>
                   </div>
                 </div>
               </CardContent>
@@ -495,26 +495,26 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Números que <span className="text-yellow-300">Impressionam</span>
+              Números que <span className="text-yellow-300">Provam</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-5xl font-bold mb-2">500+</div>
-              <p className="text-purple-100">Empresas Ativas</p>
+              <p className="text-purple-100">Negócios Usando</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold mb-2">50k+</div>
-              <p className="text-purple-100">Agendamentos/mês</p>
+              <div className="text-5xl font-bold mb-2">50mil+</div>
+              <p className="text-purple-100">Agendamentos por Mês</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold mb-2">99.9%</div>
-              <p className="text-purple-100">Uptime</p>
+              <div className="text-5xl font-bold mb-2">24h</div>
+              <p className="text-purple-100">Sistema No Ar</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold mb-2">4.9/5</div>
-              <p className="text-purple-100">Satisfação</p>
+              <div className="text-5xl font-bold mb-2">9.5/10</div>
+              <p className="text-purple-100">Nota dos Clientes</p>
             </div>
           </div>
 
@@ -524,7 +524,7 @@ const Index = () => {
               className="bg-white text-purple-600 hover:bg-gray-100"
               onClick={() => scrollToSection('precos')}
             >
-              Fazer Parte Dessas Estatísticas <ArrowRight className="ml-2" size={20} />
+              Quero Fazer Parte <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
         </div>
@@ -535,10 +535,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Planos e <span className="text-gradient">Preços</span>
+              Preços <span className="text-gradient">Honestos</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Escolha o plano ideal para o seu negócio. Todos incluem suporte completo e atualizações gratuitas.
+              Escolha o plano que cabe no seu bolso. Todos têm tudo que você precisa para organizar seu negócio.
             </p>
           </div>
 
@@ -546,26 +546,26 @@ const Index = () => {
             {/* Plano Básico */}
             <Card className="border-2 border-gray-200 hover:border-purple-300 transition-colors">
               <CardHeader className="text-center pb-8">
-                <CardTitle className="text-2xl mb-2">Básico</CardTitle>
+                <CardTitle className="text-2xl mb-2">Começando</CardTitle>
                 <div className="text-4xl font-bold mb-4">
                   R$ <span className="text-purple-600">89</span>
                   <span className="text-lg text-gray-500">/mês</span>
                 </div>
-                <p className="text-gray-600">Perfeito para pequenos negócios</p>
+                <p className="text-gray-600">Para quem está começando</p>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Até 1 empresa</span>
+                    <span>1 negócio</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Até 3 espaços</span>
+                    <span>Até 3 salas/espaços</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Até 500 agendamentos/mês</span>
+                    <span>500 agendamentos por mês</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
@@ -573,11 +573,11 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Notificações por e-mail</span>
+                    <span>Avisos por email</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Suporte via chat</span>
+                    <span>Suporte por chat</span>
                   </li>
                 </ul>
                 <Button className="w-full bg-purple-600 hover:bg-purple-700">
@@ -589,29 +589,29 @@ const Index = () => {
             {/* Plano Profissional */}
             <Card className="border-2 border-purple-500 relative hover:border-purple-600 transition-colors">
               <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-purple-600">
-                Mais Popular
+                Mais Escolhido
               </Badge>
               <CardHeader className="text-center pb-8">
-                <CardTitle className="text-2xl mb-2">Profissional</CardTitle>
+                <CardTitle className="text-2xl mb-2">Crescendo</CardTitle>
                 <div className="text-4xl font-bold mb-4">
                   R$ <span className="text-purple-600">189</span>
                   <span className="text-lg text-gray-500">/mês</span>
                 </div>
-                <p className="text-gray-600">Ideal para empresas em crescimento</p>
+                <p className="text-gray-600">Para negócios que estão crescendo</p>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Até 5 empresas</span>
+                    <span>Até 5 negócios</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Espaços ilimitados</span>
+                    <span>Salas/espaços sem limite</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Agendamentos ilimitados</span>
+                    <span>Agendamentos sem limite</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
@@ -619,11 +619,11 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>E-mail + WhatsApp</span>
+                    <span>Email + WhatsApp automático</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Relatórios avançados</span>
+                    <span>Relatórios completos</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
@@ -631,7 +631,7 @@ const Index = () => {
                   </li>
                 </ul>
                 <Button className="w-full bg-purple-600 hover:bg-purple-700">
-                  Começar Agora
+                  Escolher Este
                 </Button>
               </CardContent>
             </Card>
@@ -639,45 +639,45 @@ const Index = () => {
             {/* Plano Enterprise */}
             <Card className="border-2 border-gray-200 hover:border-purple-300 transition-colors">
               <CardHeader className="text-center pb-8">
-                <CardTitle className="text-2xl mb-2">Enterprise</CardTitle>
+                <CardTitle className="text-2xl mb-2">Empresa Grande</CardTitle>
                 <div className="text-4xl font-bold mb-4">
-                  <span className="text-purple-600">Personalizado</span>
+                  <span className="text-purple-600">Vamos Conversar</span>
                 </div>
-                <p className="text-gray-600">Para grandes organizações</p>
+                <p className="text-gray-600">Para redes e franquias</p>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Empresas ilimitadas</span>
+                    <span>Negócios sem limite</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Recursos ilimitados</span>
+                    <span>Tudo sem limite</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>API personalizada</span>
+                    <span>Sistema próprio (API)</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Integração com sistemas</span>
+                    <span>Liga com outros sistemas</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>White label disponível</span>
+                    <span>Sua marca no sistema</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Suporte 24/7 dedicado</span>
+                    <span>Suporte 24h dedicado</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>Gerente de conta</span>
+                    <span>Consultor exclusivo</span>
                   </li>
                 </ul>
                 <Button variant="outline" className="w-full border-purple-600 text-purple-600 hover:bg-purple-50">
-                  Contate para Orçamento
+                  Chamar para Conversar
                 </Button>
               </CardContent>
             </Card>
@@ -685,10 +685,10 @@ const Index = () => {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">
-              🎉 <strong>Oferta de lançamento:</strong> 30 dias grátis em qualquer plano + desconto de 20% nos primeiros 6 meses
+              🎉 <strong>Oferta especial:</strong> Teste grátis por 30 dias + 20% de desconto nos primeiros 6 meses
             </p>
             <p className="text-sm text-gray-500">
-              Sem taxa de setup • Cancele quando quiser • Suporte em português
+              Sem pegadinha • Cancela quando quiser • Atendimento em português
             </p>
           </div>
         </div>
@@ -699,47 +699,47 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Perguntas <span className="text-gradient">Frequentes</span>
+              Dúvidas <span className="text-gradient">Comuns</span>
             </h2>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">Como funciona o período de teste gratuito?</h3>
+                <h3 className="text-xl font-bold mb-3">O teste grátis é de verdade?</h3>
                 <p className="text-gray-600">
-                  Oferecemos 30 dias completamente grátis, sem necessidade de cartão de crédito. 
-                  Você pode testar todas as funcionalidades e decidir qual plano é melhor para você.
+                  Sim! 30 dias completos, sem pedir cartão de crédito. 
+                  Você testa tudo e só paga se gostar.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">Posso alterar meu plano a qualquer momento?</h3>
+                <h3 className="text-xl font-bold mb-3">Posso mudar de plano depois?</h3>
                 <p className="text-gray-600">
-                  Sim! Você pode fazer upgrade ou downgrade do seu plano a qualquer momento. 
-                  As alterações são aplicadas imediatamente e o valor é calculado proporcionalmente.
+                  Claro! Você pode aumentar ou diminuir o plano quando quiser. 
+                  A mudança é na hora e você só paga a diferença.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">Os dados ficam seguros na nuvem?</h3>
+                <h3 className="text-xl font-bold mb-3">E se a internet cair?</h3>
                 <p className="text-gray-600">
-                  Absolutamente. Utilizamos criptografia de ponta a ponta e backup automático. 
-                  Seus dados são armazenados em servidores seguros com certificação internacional.
+                  Seus dados ficam seguros na nuvem. Mesmo se faltar luz, 
+                  quando voltar está tudo lá do jeito que deixou.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">É possível integrar com outros sistemas?</h3>
+                <h3 className="text-xl font-bold mb-3">É difícil de usar?</h3>
                 <p className="text-gray-600">
-                  Sim, principalmente no plano Enterprise. Oferecemos API completa e 
-                  integrações com os principais sistemas de gestão do mercado.
+                  Nada! Se você usa WhatsApp, vai conseguir usar nosso sistema. 
+                  E se tiver dúvida, a gente ajuda!
                 </p>
               </CardContent>
             </Card>
@@ -751,7 +751,7 @@ const Index = () => {
               className="bg-purple-600 hover:bg-purple-700"
               onClick={() => scrollToSection('precos')}
             >
-              Começar Teste Gratuito <ArrowRight className="ml-2" size={20} />
+              Começar Teste Grátis <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
         </div>
@@ -761,11 +761,11 @@ const Index = () => {
       <section className="py-20 gradient-purple text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Pronto para <span className="text-yellow-300">Revolucionar</span> seus Agendamentos?
+            Pronto para <span className="text-yellow-300">Organizar</span> Tudo?
           </h2>
           <p className="text-xl mb-8 text-purple-100 max-w-3xl mx-auto">
-            Junte-se a centenas de empresas que já otimizaram sua gestão com o Agendou AI. 
-            Comece seu teste gratuito hoje mesmo!
+            Pare de perder tempo e dinheiro com agendamentos bagunçados. 
+            Teste grátis agora e veja a diferença!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -773,7 +773,7 @@ const Index = () => {
               className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-4"
               onClick={() => scrollToSection('precos')}
             >
-              Começar Teste Gratuito <ArrowRight className="ml-2" size={20} />
+              Testar Grátis Por 30 Dias <ArrowRight className="ml-2" size={20} />
             </Button>
             <Button 
               variant="outline" 
@@ -781,7 +781,7 @@ const Index = () => {
               className="border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4"
               onClick={() => scrollToSection('contato')}
             >
-              Falar com Consultor
+              Quero Falar Com Alguém
             </Button>
           </div>
         </div>
@@ -792,11 +792,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Entre em <span className="text-gradient">Contato</span>
+              Fale <span className="text-gradient">Conosco</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Nossa equipe está pronta para ajudar você a transformar seu negócio. 
-              Entre em contato através dos canais abaixo.
+              Tem alguma dúvida? Quer uma demonstração? 
+              Nossa equipe está aqui para ajudar você!
             </p>
           </div>
 
@@ -806,8 +806,8 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Phone className="text-purple-600" size={32} />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Telefone</h3>
-                <p className="text-gray-600 mb-4">Fale diretamente conosco</p>
+                <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
+                <p className="text-gray-600 mb-4">Chama que a gente responde rápido</p>
                 <a href="tel:+5511999999999" className="text-purple-600 font-semibold hover:underline">
                   (11) 99999-9999
                 </a>
@@ -819,8 +819,8 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Mail className="text-purple-600" size={32} />
                 </div>
-                <h3 className="text-xl font-bold mb-2">E-mail</h3>
-                <p className="text-gray-600 mb-4">Envie sua dúvida</p>
+                <h3 className="text-xl font-bold mb-2">Email</h3>
+                <p className="text-gray-600 mb-4">Manda sua dúvida por email</p>
                 <a href="mailto:contato@agendouai.com" className="text-purple-600 font-semibold hover:underline">
                   contato@agendouai.com
                 </a>
@@ -832,8 +832,8 @@ const Index = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="text-purple-600" size={32} />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Endereço</h3>
-                <p className="text-gray-600 mb-4">Visite nosso escritório</p>
+                <h3 className="text-xl font-bold mb-2">Onde Estamos</h3>
+                <p className="text-gray-600 mb-4">Nossa base fica em</p>
                 <p className="text-purple-600 font-semibold">
                   São Paulo, SP<br />
                   Brasil
@@ -848,7 +848,7 @@ const Index = () => {
               className="bg-purple-600 hover:bg-purple-700"
               onClick={() => scrollToSection('precos')}
             >
-              Solicitar Demonstração <ArrowRight className="ml-2" size={20} />
+              Quero Uma Demonstração <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
         </div>
@@ -861,46 +861,43 @@ const Index = () => {
             <div>
               <div className="text-2xl font-bold text-gradient mb-4">Agendou AI</div>
               <p className="text-gray-400 mb-4">
-                Revolucionando a gestão de agendamentos com inteligência artificial.
+                Acabando com a bagunça dos agendamentos, um negócio de cada vez.
               </p>
-              <div className="flex space-x-4">
-                {/* Social icons can be added here */}
-              </div>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-4">Produto</h4>
+              <h4 className="text-lg font-semibold mb-4">O Sistema</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><button onClick={() => scrollToSection('recursos')} className="hover:text-white transition-colors">Recursos</button></li>
+                <li><button onClick={() => scrollToSection('recursos')} className="hover:text-white transition-colors">Como Funciona</button></li>
                 <li><button onClick={() => scrollToSection('precos')} className="hover:text-white transition-colors">Preços</button></li>
-                <li><a href="#" className="hover:text-white transition-colors">Integrações</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">API</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Demonstração</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Ajuda</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-4">Empresa</h4>
+              <h4 className="text-lg font-semibold mb-4">Nossa Empresa</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Sobre</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Quem Somos</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Carreiras</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Trabalhe Conosco</a></li>
                 <li><button onClick={() => scrollToSection('contato')} className="hover:text-white transition-colors">Contato</button></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-4">Suporte</h4>
+              <h4 className="text-lg font-semibold mb-4">Precisa de Ajuda?</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Documentação</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Termos</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Como Usar</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Problemas</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Termos de Uso</a></li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Agendou AI. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Agendou AI. Feito com ❤️ para facilitar sua vida.</p>
           </div>
         </div>
       </footer>
