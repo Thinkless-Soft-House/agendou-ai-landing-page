@@ -150,8 +150,8 @@ const Termos = () => {
               <div className="text-gray-700 leading-relaxed">
                 <p className="mb-3">Dúvidas sobre estes termos? Entre em contato:</p>
                 <ul className="space-y-2">
-                  <li><strong>Email:</strong> contato@agendouai.com.br</li>
-                  <li><strong>WhatsApp:</strong> (11) 99999-9999</li>
+                  <li><strong>Email:</strong> contato@thinkless.com.br</li>
+                  <li><strong>WhatsApp:</strong> (31) 99560-3437</li>
                 </ul>
               </div>
             </section>
