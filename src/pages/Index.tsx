@@ -66,7 +66,7 @@ const Index = () => {
               <button onClick={() => scrollToSection('vantagens')} className="hover:text-purple-600 transition-colors">
                 Vantagens
               </button>
-              <button onClick={() => scrollToSection('recursos')} className="hover:text-purple-600 transition-colors">
+              <button onClick={() => scrollToSection('como-funciona')} className="hover:text-purple-600 transition-colors">
                 Como Funciona
               </button>
               <button onClick={() => scrollToSection('precos')} className="hover:text-purple-600 transition-colors">
@@ -267,7 +267,7 @@ const Index = () => {
       </section>
 
       {/* Como Funciona */}
-      <section className="py-20">
+      <section id="como-funciona" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -501,11 +501,11 @@ const Index = () => {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold mb-2">500+</div>
+              <div className="text-5xl font-bold mb-2">20+</div>
               <p className="text-purple-100">Negócios Usando</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold mb-2">50mil+</div>
+              <div className="text-5xl font-bold mb-2">3mil+</div>
               <p className="text-purple-100">Agendamentos por Mês</p>
             </div>
             <div className="text-center">
@@ -513,7 +513,7 @@ const Index = () => {
               <p className="text-purple-100">Sistema No Ar</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold mb-2">9.5/10</div>
+              <div className="text-5xl font-bold mb-2">9.6/10</div>
               <p className="text-purple-100">Nota dos Clientes</p>
             </div>
           </div>
@@ -565,10 +565,6 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
-                    <span>500 agendamentos por mês</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="text-green-500 mr-3" size={20} />
                     <span>QR Code personalizado</span>
                   </li>
                   <li className="flex items-center">
@@ -608,10 +604,6 @@ const Index = () => {
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
                     <span>Salas/espaços sem limite</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Check className="text-green-500 mr-3" size={20} />
-                    <span>Agendamentos sem limite</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="text-green-500 mr-3" size={20} />
@@ -778,7 +770,7 @@ const Index = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4"
+              className="bg-white text-purple-600 hover:bg-gray-100 hover:text-purple-600 text-lg px-8 py-4"
               onClick={() => scrollToSection('contato')}
             >
               Quero Falar Com Alguém
@@ -800,7 +792,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="text-center border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -808,8 +800,8 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
                 <p className="text-gray-600 mb-4">Chama que a gente responde rápido</p>
-                <a href="tel:+5511999999999" className="text-purple-600 font-semibold hover:underline">
-                  (11) 99999-9999
+                <a href="tel:+55319995603437" className="text-purple-600 font-semibold hover:underline">
+                  (31) 99560-3437
                 </a>
               </CardContent>
             </Card>
@@ -821,13 +813,13 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <p className="text-gray-600 mb-4">Manda sua dúvida por email</p>
-                <a href="mailto:contato@agendouai.com" className="text-purple-600 font-semibold hover:underline">
-                  contato@agendouai.com
+                <a href="mailto:contato@thinkless.com.br" className="text-purple-600 font-semibold hover:underline">
+                  contato@thinkless.com.br
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-0 shadow-lg">
+            {/* <Card className="text-center border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="text-purple-600" size={32} />
@@ -839,7 +831,7 @@ const Index = () => {
                   Brasil
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
 
           <div className="text-center mt-12">
@@ -857,7 +849,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="text-2xl font-bold text-gradient mb-4">Agendou AI</div>
               <p className="text-gray-400 mb-4">
@@ -868,14 +860,14 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">O Sistema</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><button onClick={() => scrollToSection('recursos')} className="hover:text-white transition-colors">Como Funciona</button></li>
+                <li><button onClick={() => scrollToSection('como-funciona')} className="hover:text-white transition-colors">Como Funciona</button></li>
                 <li><button onClick={() => scrollToSection('precos')} className="hover:text-white transition-colors">Preços</button></li>
-                <li><a href="#" className="hover:text-white transition-colors">Demonstração</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Ajuda</a></li>
+                <li><button onClick={() => scrollToSection('precos')} className="hover:text-white transition-colors">Demonstração</button></li>
+                <li><button onClick={() => scrollToSection('contato')} className="hover:text-white transition-colors">Ajuda</button></li>
               </ul>
             </div>
 
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold mb-4">Nossa Empresa</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Quem Somos</a></li>
@@ -883,15 +875,15 @@ const Index = () => {
                 <li><a href="#" className="hover:text-white transition-colors">Trabalhe Conosco</a></li>
                 <li><button onClick={() => scrollToSection('contato')} className="hover:text-white transition-colors">Contato</button></li>
               </ul>
-            </div>
+            </div> */}
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Precisa de Ajuda?</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Como Usar</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Problemas</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Termos de Uso</a></li>
+                <li><button onClick={() => scrollToSection('contato')} className="hover:text-white transition-colors">Central de Ajuda</button></li>
+                <li><button onClick={() => scrollToSection('como-funciona')} className="hover:text-white transition-colors">Como Usar</button></li>
+                <li><button onClick={() => scrollToSection('contato')} className="hover:text-white transition-colors">Problemas</button></li>
+                <li><a href="/termos" className="hover:text-white transition-colors">Termos de Uso</a></li>
               </ul>
             </div>
           </div>
