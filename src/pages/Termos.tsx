@@ -19,7 +19,7 @@ const Termos = () => {
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="prose prose-lg max-w-none">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8">Termos de Uso - Agendou AI</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-8">Termos de Uso - Agendou Ai</h1>
           
           <p className="text-lg text-gray-600 mb-8">
             <strong>Última atualização:</strong> {new Date().toLocaleDateString('pt-BR')}
@@ -27,9 +27,9 @@ const Termos = () => {
 
           <div className="space-y-8">
             <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Sobre o Agendou AI</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Sobre o Agendou Ai</h2>
               <p className="text-gray-700 leading-relaxed">
-                O Agendou AI é uma plataforma de agendamento online que ajuda pequenas e médias empresas a 
+                O Agendou Ai é uma plataforma de agendamento online que ajuda pequenas e médias empresas a 
                 gerenciar seus horários, funcionários e atender seus clientes de forma mais organizada. 
                 Ao usar nosso serviço, você concorda com estes termos.
               </p>
@@ -37,7 +37,7 @@ const Termos = () => {
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Como Funciona Nosso Serviço</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">O Agendou AI oferece:</p>
+              <p className="text-gray-700 leading-relaxed mb-4">O Agendou Ai oferece:</p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li>Sistema de agendamento para múltiplas empresas e espaços</li>
                 <li>Controle de acesso para funcionários específicos</li>
@@ -53,7 +53,7 @@ const Termos = () => {
               <p className="text-gray-700 leading-relaxed">
                 Nosso serviço é destinado a empresários, profissionais autônomos e seus funcionários 
                 que desejam organizar melhor seus agendamentos. Você deve ter pelo menos 18 anos ou 
-                autorização dos pais/responsáveis para usar o Agendou AI.
+                autorização dos pais/responsáveis para usar o Agendou Ai.
               </p>
             </section>
 
@@ -99,7 +99,7 @@ const Termos = () => {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. O Que Não Permitimos</h2>
               <div className="text-gray-700 leading-relaxed">
-                <p className="mb-3"><strong>É proibido usar o Agendou AI para:</strong></p>
+                <p className="mb-3"><strong>É proibido usar o Agendou Ai para:</strong></p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Atividades ilegais ou que violem direitos de terceiros</li>
                   <li>Enviar spam ou mensagens não solicitadas</li>
@@ -113,7 +113,7 @@ const Termos = () => {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Disponibilidade do Serviço</h2>
               <p className="text-gray-700 leading-relaxed">
-                Fazemos nosso melhor para manter o Agendou AI funcionando 24/7, mas pode haver 
+                Fazemos nosso melhor para manter o Agendou Ai funcionando 24/7, mas pode haver 
                 interrupções para manutenção ou por problemas técnicos. Não somos responsáveis 
                 por perdas causadas por indisponibilidade temporária do sistema.
               </p>
@@ -131,7 +131,7 @@ const Termos = () => {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Limitação de Responsabilidade</h2>
               <p className="text-gray-700 leading-relaxed">
-                O Agendou AI é fornecido "como está". Não nos responsabilizamos por danos 
+                O Agendou Ai é fornecido "como está". Não nos responsabilizamos por danos 
                 indiretos, perda de lucros ou problemas causados pelo uso do sistema. Nossa 
                 responsabilidade máxima é limitada ao valor pago por você no último mês.
               </p>

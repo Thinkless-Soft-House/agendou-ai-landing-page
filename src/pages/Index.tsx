@@ -55,7 +55,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold text-gradient">
-              Agendou AI
+              Agendou Ai
             </div>
             
             {/* Menu Desktop */}
@@ -155,7 +155,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Por que usar o <span className="text-gradient">Agendou AI</span>?
+              Por que usar o <span className="text-gradient">Agendou Ai</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Pare de perder tempo e dinheiro com agendamentos bagunçados. Veja como podemos ajudar:
@@ -851,7 +851,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-2xl font-bold text-gradient mb-4">Agendou AI</div>
+              <div className="text-2xl font-bold text-gradient mb-4">Agendou Ai</div>
               <p className="text-gray-400 mb-4">
                 Acabando com a bagunça dos agendamentos, um negócio de cada vez.
               </p>
@@ -889,7 +889,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Agendou AI. Feito com ❤️ para facilitar sua vida.</p>
+            <p>&copy; 2024 Agendou Ai. Feito com ❤️ para facilitar sua vida.</p>
           </div>
         </div>
       </footer>
