@@ -814,7 +814,7 @@ const Index = () => {
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <p className="text-gray-600 mb-4">Manda sua dúvida por email</p>
                 <a href="mailto:contato@thinkless.com.br" className="text-purple-600 font-semibold hover:underline">
-                  suporte@thinkless.com.br
+                  contato@thinkless.com.br
                 </a>
               </CardContent>
             </Card>

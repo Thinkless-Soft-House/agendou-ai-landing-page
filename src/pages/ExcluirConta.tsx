@@ -1,16 +1,36 @@
-
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Smartphone, Monitor, AlertTriangle, Heart } from "lucide-react";
+import {
+  ArrowLeft,
+  Smartphone,
+  Monitor,
+  AlertTriangle,
+  Heart,
+} from "lucide-react";
 
 const ExcluirConta = () => {
+  const navigate = useNavigate();
+
+  const handleNavigateHome = (section?: string) => {
+    navigate("/");
+    if (section) {
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        element?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4">
-          <Link to="/" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
+          >
             <ArrowLeft className="h-5 w-5" />
             Voltar para o site
           </Link>
@@ -30,8 +50,8 @@ const ExcluirConta = () => {
             Sentimos muito que você queira nos deixar 😔
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Sabemos que às vezes as coisas não funcionam como esperamos. 
-            Se você realmente precisa excluir sua conta, vamos te ajudar com isso.
+            Sabemos que às vezes as coisas não funcionam como esperamos. Se você
+            realmente precisa excluir sua conta, vamos te ajudar com isso.
           </p>
         </div>
 
@@ -45,17 +65,25 @@ const ExcluirConta = () => {
           </CardHeader>
           <CardContent className="text-yellow-700">
             <ul className="space-y-2">
-              <li>• <strong>Todos os seus dados serão perdidos permanentemente</strong></li>
+              <li>
+                •{" "}
+                <strong>
+                  Todos os seus dados serão perdidos permanentemente
+                </strong>
+              </li>
               <li>• Seus agendamentos ativos serão cancelados</li>
               <li>• Seus clientes não conseguirão mais agendar com você</li>
               <li>• Não será possível recuperar a conta depois</li>
             </ul>
             <div className="mt-4 p-4 bg-white rounded-lg border border-yellow-200">
-              <p className="font-medium text-yellow-800 mb-2">💡 Que tal tentar nossa ajuda primeiro?</p>
+              <p className="font-medium text-yellow-800 mb-2">
+                💡 Que tal tentar nossa ajuda primeiro?
+              </p>
               <p className="text-sm">
-                Entre em contato conosco pelo WhatsApp <strong>(11) 99999-9999</strong> ou 
-                email <strong>suporte@agendouai.com.br</strong>. 
-                Muitas vezes conseguimos resolver o problema juntos!
+                Entre em contato conosco pelo WhatsApp{" "}
+                <strong>(31) 99560-3437</strong> ou email{" "}
+                <strong>suporte@thinkless.com.br</strong>. Muitas vezes
+                conseguimos resolver o problema juntos!
               </p>
             </div>
           </CardContent>
@@ -74,34 +102,51 @@ const ExcluirConta = () => {
             <CardContent>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</div>
+                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    1
+                  </div>
                   <div>
                     <p className="font-medium">Faça login no app</p>
-                    <p className="text-sm text-gray-600">Use seu email e senha normalmente</p>
+                    <p className="text-sm text-gray-600">
+                      Use seu email e senha normalmente
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
-                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</div>
+                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    2
+                  </div>
                   <div>
                     <p className="font-medium">Vá para o seu Perfil</p>
-                    <p className="text-sm text-gray-600">Toque no ícone do seu perfil no menu</p>
+                    <p className="text-sm text-gray-600">
+                      Toque no ícone do seu perfil no menu
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
-                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</div>
+                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    3
+                  </div>
                   <div>
                     <p className="font-medium">Toque em "Editar Perfil"</p>
-                    <p className="text-sm text-gray-600">Você verá suas informações pessoais</p>
+                    <p className="text-sm text-gray-600">
+                      Você verá suas informações pessoais
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
-                  <div className="bg-red-100 text-red-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</div>
+                  <div className="bg-red-100 text-red-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    4
+                  </div>
                   <div>
                     <p className="font-medium">Role até o final da tela</p>
-                    <p className="text-sm text-gray-600">Lá embaixo você encontrará o botão vermelho "Excluir Conta"</p>
+                    <p className="text-sm text-gray-600">
+                      Lá embaixo você encontrará o botão vermelho "Excluir
+                      Conta"
+                    </p>
                   </div>
                 </div>
               </div>
@@ -119,34 +164,52 @@ const ExcluirConta = () => {
             <CardContent>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</div>
+                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    1
+                  </div>
                   <div>
                     <p className="font-medium">Acesse o site e faça login</p>
-                    <p className="text-sm text-gray-600">Entre com seu email e senha</p>
+                    <p className="text-sm text-gray-600">
+                      Entre com seu email e senha
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
-                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</div>
+                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    2
+                  </div>
                   <div>
                     <p className="font-medium">Clique em "Configurações"</p>
-                    <p className="text-sm text-gray-600">Você encontra no menu lateral ou no seu perfil</p>
+                    <p className="text-sm text-gray-600">
+                      Você encontra no menu lateral ou no seu perfil
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
-                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</div>
+                  <div className="bg-purple-100 text-purple-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    3
+                  </div>
                   <div>
                     <p className="font-medium">Vá para "Avançado"</p>
-                    <p className="text-sm text-gray-600">É uma aba dentro das configurações</p>
+                    <p className="text-sm text-gray-600">
+                      É uma aba dentro das configurações
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
-                  <div className="bg-red-100 text-red-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</div>
+                  <div className="bg-red-100 text-red-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    4
+                  </div>
                   <div>
-                    <p className="font-medium">Clique em "Excluir Conta"</p>
-                    <p className="text-sm text-gray-600">Botão vermelho na seção de gerenciamento de conta</p>
+                    <p className="font-medium">
+                      Clique em "Excluir Minha Conta"
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Botão vermelho na seção de gerenciamento de conta
+                    </p>
                   </div>
                 </div>
               </div>
@@ -157,12 +220,16 @@ const ExcluirConta = () => {
         {/* O que acontece depois */}
         <Card className="mb-8 border-gray-200">
           <CardHeader>
-            <CardTitle className="text-gray-800">O que acontece após a exclusão?</CardTitle>
+            <CardTitle className="text-gray-800">
+              O que acontece após a exclusão?
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-medium text-gray-800 mb-2">Imediatamente:</h4>
+                <h4 className="font-medium text-gray-800 mb-2">
+                  Imediatamente:
+                </h4>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Sua conta é desativada</li>
                   <li>• Agendamentos futuros são cancelados</li>
@@ -171,7 +238,9 @@ const ExcluirConta = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium text-gray-800 mb-2">Em até 30 dias:</h4>
+                <h4 className="font-medium text-gray-800 mb-2">
+                  Em até 30 dias:
+                </h4>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Todos os dados são permanentemente excluídos</li>
                   <li>• Histórico de agendamentos é apagado</li>
@@ -186,21 +255,29 @@ const ExcluirConta = () => {
         {/* Alternativas */}
         <Card className="mb-8 border-green-200 bg-green-50">
           <CardHeader>
-            <CardTitle className="text-green-800">🌟 Alternativas que você pode considerar</CardTitle>
+            <CardTitle className="text-green-800">
+              🌟 Alternativas que você pode considerar
+            </CardTitle>
           </CardHeader>
           <CardContent className="text-green-700">
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-white p-4 rounded-lg border border-green-200">
                 <h4 className="font-medium mb-2">Pausar temporariamente</h4>
-                <p className="text-sm">Desative notificações e agendamentos por um tempo</p>
+                <p className="text-sm">
+                  Desative notificações e agendamentos por um tempo
+                </p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-green-200">
                 <h4 className="font-medium mb-2">Mudar de plano</h4>
-                <p className="text-sm">Talvez um plano mais simples atenda melhor</p>
+                <p className="text-sm">
+                  Talvez um plano mais simples atenda melhor
+                </p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-green-200">
                 <h4 className="font-medium mb-2">Conversar conosco</h4>
-                <p className="text-sm">Nossa equipe pode ajudar com suas dificuldades</p>
+                <p className="text-sm">
+                  Nossa equipe pode ajudar com suas dificuldades
+                </p>
               </div>
             </div>
           </CardContent>
@@ -212,30 +289,35 @@ const ExcluirConta = () => {
             Ainda assim quer nos deixar? 💔
           </h3>
           <p className="text-gray-600 mb-6">
-            Entendemos e respeitamos sua decisão. Se precisar de ajuda com o processo ou 
-            quiser conversar sobre alguma dificuldade, estamos aqui para você.
+            Entendemos e respeitamos sua decisão. Se precisar de ajuda com o
+            processo ou quiser conversar sobre alguma dificuldade, estamos aqui
+            para você.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="text-center">
               <p className="font-medium text-gray-800">WhatsApp</p>
-              <p className="text-purple-600">(11) 99999-9999</p>
+              <p className="text-purple-600">(31) 99560-3437</p>
             </div>
             <div className="hidden sm:block w-px h-8 bg-gray-300"></div>
             <div className="text-center">
               <p className="font-medium text-gray-800">Email</p>
-              <p className="text-purple-600">suporte@agendouai.com.br</p>
+              <p className="text-purple-600">suporte@thinkless.com.br</p>
             </div>
           </div>
-          
+
           <div className="mt-8">
             <Link to="/">
-              <Button className="bg-purple-600 hover:bg-purple-700 mr-4">
+              <Button className="bg-purple-600 hover:bg-purple-700 mr-4" onClick={() => handleNavigateHome('inicio')}>
                 Voltar para o site
               </Button>
             </Link>
             <Link to="/#pricing">
-              <Button variant="outline" className="border-purple-200 text-purple-600 hover:bg-purple-50">
+              <Button
+                variant="outline"
+                className="border-purple-200 text-purple-600 hover:bg-purple-50"
+                onClick={() => handleNavigateHome('precos')}
+              >
                 Ver nossos planos
               </Button>
             </Link>
